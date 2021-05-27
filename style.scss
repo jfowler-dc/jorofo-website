@@ -1,0 +1,104 @@
+/** Variables **/
+:root {
+    /** Colors **/
+    --selection-color: rgba(180, 213, 254, .6);
+
+    /** Fonts **/
+    --main-font-family: 'Source Sans Pro', sans-serif;
+
+    /** Sizes **/
+    --wrap-width: 60rem;
+
+}
+
+
+/* Default Styles */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: var(--main-font-family);
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative; 
+    display:flex; 
+    flex-direction:column;
+} 
+
+::selection {
+    background: var(--selection-color);
+}
+
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+    @media screen and (min-width: 960px) {
+        width: var(--wrap-width);
+    }
+}
+
+
+/* Convert px to rem */
+@function rem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+
+/* Font Weight */
+.bold,
+strong {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.italic,
+em {
+    font-style: italic;
+}
+
+/* Responsive Element -- Good for making perfect squares or circles */
+.responsive-element {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+}
+
+/* Responsive Iframe, Object, Embed */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: rem(30px);
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* Typography */
+a {
+    text-decoration: none;
+    &:hover {
+        color:var(--red);
+    }
+}
