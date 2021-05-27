@@ -7,11 +7,11 @@ let projectListItem = Vue.component('project-list-item', {
     },
     methods: {
         toggleOpen() {
-            // if (this.open == true) {
-            //     this.open = false
-            // } else {
-            //     this.open = true
-            // }
+            if (this.open == true) {
+                this.open = false
+            } else {
+                this.open = true
+            }
         }
     },
     template: `
@@ -54,67 +54,75 @@ new Vue({
             projects: [
                 {
                     name: 'Hummingbird Strategies LLC',
-                    url: 'https://testing.com',
+                    url: 'https://hummingbirdstrategies.com',
                     year: '2021',
-                    role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    role: 'Developer',
+                    tech: 'HTML, CSS, Javascript, PHP, WordPress',
+                    designer: 'Freelancer'
                 },
                 {
                     name: 'WhizzBang Booking and Management',
-                    url: 'https://testing.com',
+                    url: 'https://whizzbangbam.com',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
+                    tech: 'HTML, CSS, Javascript, PHP, WordPress',
                     designer: 'John Fowler'
                 },
                 {
                     name: 'Ritz Carlton - Resident Admin Survey Application',
-                    url: 'https://testing.com',
+                    url: '',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    tech: 'HTML, CSS, Javascript, VueJS, PHP, Laravel',
+                    designer: 'Crier Media Group'
                 },
                 {
                     name: 'Atlas Alerts Dashboard',
-                    url: 'https://testing.com',
+                    url: '',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    tech: 'HTML, CSS, Javascript, jQuery, D3.js, PHP, Laravel, Mailgun',
+                    designer: 'Crier Media Group'
                 },
                 {
                     name: 'COVID Accountability Library',
-                    url: 'https://testing.com',
+                    url: 'https://covidaccountabilitylibrary.com',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    tech: 'HTML, CSS, Javascript, VueJS, PHP, Laravel',
+                    designer: 'Crier Media Group'
                 },
                 {
                     name: 'West Virginia Lottery',
-                    url: 'https://testing.com',
+                    url: 'https://wvlottery.com',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
+                    designer: 'Bulldog Creative Services'
                 },
                 {
                     name: 'Keith Albee Performing Arts Center',
-                    url: 'https://testing.com',
+                    url: 'http://www.keithalbee.com',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
+                    designer: 'Bulldog Creative Services'
                 },
                 {
                     name: 'St. Marys Medical Center',
-                    url: 'https://testing.com',
+                    url: 'https://www.st-marys.org',
                     year: '2021',
                     role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
-                    designer: 'John Fowler'
+                    tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
+                    designer: 'Bulldog Creative Services'
+                },
+                {
+                    name: 'Heritage Farm Museum',
+                    url: 'https://heritagefarmmuseum.com',
+                    year: '2021',
+                    role: 'Developer/Designer',
+                    tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
+                    designer: 'Bulldog Creative Services'
                 },
             ]
         }
