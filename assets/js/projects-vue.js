@@ -7,23 +7,23 @@ let projectListItem = Vue.component('project-list-item', {
     },
     methods: {
         toggleOpen() {
-            if (this.open == true) {
-                this.open = false
-            } else {
-                this.open = true
-            }
+            // if (this.open == true) {
+            //     this.open = false
+            // } else {
+            //     this.open = true
+            // }
         }
     },
     template: `
     <li>
         <div class="pb-4">
             <header>
-                <h3 class="text-2xl font-semibold"><span class="hover-project" @click="toggleOpen">{{name}}</span></h3>
+                <h3 class="text-2xl font-semibold"><span class="hover-project" v-bind:class="{'color-accent': open}" @click="toggleOpen">{{name}}</span></h3>
             </header>
             <ul v-if="open == true" class="text-base pb-3 color-gray">
-                <li v-if="name">
+                <li v-if="url">
                     <span class="font-semibold">URL:</span>
-                    <span><a target="_blank" :href="name">{{name}}</a></span>
+                    <span><a target="_blank" :href="url">{{url}}</a></span>
                 </li>
                 <li v-if="year">
                     <span class="font-semibold">Year:</span>
@@ -53,7 +53,7 @@ new Vue({
         return {
             projects: [
                 {
-                    name: 'Untitled Project',
+                    name: 'Hummingbird Strategies LLC',
                     url: 'https://testing.com',
                     year: '2021',
                     role: 'Developer/Designer',
@@ -61,7 +61,7 @@ new Vue({
                     designer: 'John Fowler'
                 },
                 {
-                    name: 'Untitled Project',
+                    name: 'WhizzBang Booking and Management',
                     url: 'https://testing.com',
                     year: '2021',
                     role: 'Developer/Designer',
@@ -69,7 +69,7 @@ new Vue({
                     designer: 'John Fowler'
                 },
                 {
-                    name: 'Untitled Project',
+                    name: 'Ritz Carlton - Resident Admin Survey Application',
                     url: 'https://testing.com',
                     year: '2021',
                     role: 'Developer/Designer',
@@ -77,7 +77,7 @@ new Vue({
                     designer: 'John Fowler'
                 },
                 {
-                    name: 'Untitled Project',
+                    name: 'Atlas Alerts Dashboard',
                     url: 'https://testing.com',
                     year: '2021',
                     role: 'Developer/Designer',
@@ -85,7 +85,7 @@ new Vue({
                     designer: 'John Fowler'
                 },
                 {
-                    name: 'Untitled Project',
+                    name: 'COVID Accountability Library',
                     url: 'https://testing.com',
                     year: '2021',
                     role: 'Developer/Designer',
@@ -93,7 +93,23 @@ new Vue({
                     designer: 'John Fowler'
                 },
                 {
-                    name: 'Untitled Project',
+                    name: 'West Virginia Lottery',
+                    url: 'https://testing.com',
+                    year: '2021',
+                    role: 'Developer/Designer',
+                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
+                    designer: 'John Fowler'
+                },
+                {
+                    name: 'Keith Albee Performing Arts Center',
+                    url: 'https://testing.com',
+                    year: '2021',
+                    role: 'Developer/Designer',
+                    tech: 'HTML, CSS, Wordpress, PHP, Javascript',
+                    designer: 'John Fowler'
+                },
+                {
+                    name: 'St. Marys Medical Center',
                     url: 'https://testing.com',
                     year: '2021',
                     role: 'Developer/Designer',
@@ -109,6 +125,7 @@ new Vue({
             v-for="(project, key) in projects" 
             :key="key" 
             :name="project.name"
+            :url="project.url"
             :year="project.year"
             :role="project.role"
             :tech="project.tech"
