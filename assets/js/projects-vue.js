@@ -134,7 +134,7 @@ new Vue({
             :key="key" 
             :name="project.name"
             :url="project.url"
-            :year="project.year"
+            
             :role="project.role"
             :tech="project.tech"
             :designer="project.designer" /> 
