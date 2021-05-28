@@ -1,3 +1,5 @@
+let slideUpDown = Vue.component('slide-up-down', VueSlideUpDown)
+
 let projectListItem = Vue.component('project-list-item', {
     props: ['name', 'url', 'year', 'role', 'tech', 'designer'],
     data() {
@@ -20,31 +22,36 @@ let projectListItem = Vue.component('project-list-item', {
             <header>
                 <h3 class="text-2xl font-semibold"><span class="hover-project" v-bind:class="{'color-accent': open}" @click="toggleOpen">{{name}}</span></h3>
             </header>
-            <ul v-if="open == true" class="text-base pb-3 color-gray">
-                <li v-if="url">
-                    <span class="font-semibold">URL:</span>
-                    <span><a target="_blank" :href="url">{{url}}</a></span>
-                </li>
-                <li v-if="year">
-                    <span class="font-semibold">Year:</span>
-                    <span>{{year}}</span>
-                </li>
-                <li v-if="role">
-                    <span class="font-semibold">Role:</span>
-                    <span>{{role}}</span>
-                </li>
-                <li v-if="tech">
-                    <span class="font-semibold">Tech:</span>
-                    <span>{{tech}}</span>
-                </li>
-                <li v-if="designer">
-                    <span class="font-semibold">Designer:</span>
-                    <span>{{designer}}</span>
-                </li>
-            </ul>
+            <slide-up-down :active="open" :duraction="1000">
+                <ul class="text-base pb-3 color-gray">
+                    <li v-if="url">
+                        <span class="font-semibold">URL:</span>
+                        <span><a target="_blank" :href="url">{{url}}</a></span>
+                    </li>
+                    <li v-if="year">
+                        <span class="font-semibold">Year:</span>
+                        <span>{{year}}</span>
+                    </li>
+                    <li v-if="role">
+                        <span class="font-semibold">Role:</span>
+                        <span>{{role}}</span>
+                    </li>
+                    <li v-if="tech">
+                        <span class="font-semibold">Tech:</span>
+                        <span>{{tech}}</span>
+                    </li>
+                    <li v-if="designer">
+                        <span class="font-semibold">Designer:</span>
+                        <span>{{designer}}</span>
+                    </li>
+                </ul>
+            </slide-up-down>
         </div>
     </li> 
-    `
+    `,
+    components: {
+        slideUpDown
+    }
 }) 
 
 new Vue({
