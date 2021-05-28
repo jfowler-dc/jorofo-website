@@ -71,56 +71,56 @@ new Vue({
                 {
                     name: 'Ritz Carlton - Resident Admin Survey Application',
                     url: '',
-                    year: '2021',
-                    role: 'Developer/Designer',
+                    year: '2020',
+                    role: 'Senior Front End Developer',
+                    tech: 'HTML, CSS, Javascript, VueJS, PHP, Laravel',
+                    designer: 'Crier Media Group'
+                },
+                {
+                    name: 'COVID Accountability Library',
+                    url: 'https://covidaccountabilitylibrary.com',
+                    year: '2019',
+                    role: 'Senior Front End Developer',
                     tech: 'HTML, CSS, Javascript, VueJS, PHP, Laravel',
                     designer: 'Crier Media Group'
                 },
                 {
                     name: 'Atlas Alerts Dashboard',
                     url: '',
-                    year: '2021',
-                    role: 'Developer/Designer',
+                    year: '2018',
+                    role: 'Senior Front End Developer',
                     tech: 'HTML, CSS, Javascript, jQuery, D3.js, PHP, Laravel, Mailgun',
                     designer: 'Crier Media Group'
                 },
                 {
-                    name: 'COVID Accountability Library',
-                    url: 'https://covidaccountabilitylibrary.com',
-                    year: '2021',
-                    role: 'Developer/Designer',
-                    tech: 'HTML, CSS, Javascript, VueJS, PHP, Laravel',
-                    designer: 'Crier Media Group'
-                },
-                {
-                    name: 'West Virginia Lottery',
-                    url: 'https://wvlottery.com',
-                    year: '2021',
-                    role: 'Developer/Designer',
+                    name: 'Keith Albee Performing Arts Center',
+                    url: 'http://www.keithalbee.com',
+                    year: '2017',
+                    role: 'Lead Front End Developer',
                     tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
                     designer: 'Bulldog Creative Services'
                 },
                 {
-                    name: 'Keith Albee Performing Arts Center',
-                    url: 'http://www.keithalbee.com',
-                    year: '2021',
-                    role: 'Developer/Designer',
+                    name: 'West Virginia Lottery',
+                    url: 'https://wvlottery.com',
+                    year: '2016',
+                    role: 'Lead Front End Developer',
                     tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
                     designer: 'Bulldog Creative Services'
                 },
                 {
                     name: 'St. Marys Medical Center',
                     url: 'https://www.st-marys.org',
-                    year: '2021',
-                    role: 'Developer/Designer',
+                    year: '2016',
+                    role: 'Lead Front End Developer',
                     tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
                     designer: 'Bulldog Creative Services'
                 },
                 {
                     name: 'Heritage Farm Museum',
                     url: 'https://heritagefarmmuseum.com',
-                    year: '2021',
-                    role: 'Developer/Designer',
+                    year: '2015',
+                    role: 'Front End Web Developer',
                     tech: 'HTML, CSS, Javascript, jQuery, PHP, ExpressionEngine',
                     designer: 'Bulldog Creative Services'
                 },
@@ -134,7 +134,7 @@ new Vue({
             :key="key" 
             :name="project.name"
             :url="project.url"
-            
+            :year="project.year"
             :role="project.role"
             :tech="project.tech"
             :designer="project.designer" /> 
