@@ -68,7 +68,7 @@ new Vue({
                     designer: 'Freelancer'
                 },
                 {
-                    name: 'WhizzBang Booking and Management (Under Construction)',
+                    name: 'WhizzBang Booking and Management',
                     url: 'https://whizzbangbam.com',
                     year: '2021',
                     role: 'Developer/Designer',
