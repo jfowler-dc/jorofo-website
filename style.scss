@@ -4,7 +4,7 @@
     --selection-color: rgba(180, 213, 254, .6);
     --gray: #7F7F7F;
     --dk-gray: #4D4D4D;
-    --accent: #3aafa9;
+    --accent: #6667ab;
 
     /** Fonts **/
     --main-font-family: 'Source Sans Pro', sans-serif;
@@ -48,7 +48,7 @@ body {
 
 /* Convert px to rem */
 @function rem($size) {
-    $remSize: $size / 16px;
+    $remSize: calc($size / 16px);
     @return $remSize * 1rem;
 }
 

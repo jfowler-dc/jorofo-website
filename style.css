@@ -4,9 +4,9 @@
   --selection-color: rgba(180, 213, 254, .6);
   --gray: #7F7F7F;
   --dk-gray: #4D4D4D;
-  --accent: #3aafa9;
+  --accent: #6667ab;
   /** Fonts **/
-  --main-font-family: 'Source Sans Pro', sans-serif;
+  --main-font-family: "Source Sans Pro", sans-serif;
   /** Sizes **/
   --wrap-width: 60rem;
 }
@@ -25,13 +25,8 @@ body {
 #wrapper {
   min-height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 ::-moz-selection {
@@ -46,7 +41,6 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 960px) {
   .wrap {
     width: var(--wrap-width);
@@ -73,9 +67,8 @@ em {
 .responsive-element {
   position: relative;
 }
-
 .responsive-element:after {
-  content: '';
+  content: "";
   display: block;
   padding-top: 100%;
 }
@@ -88,7 +81,6 @@ em {
   height: 0;
   overflow: hidden;
 }
-
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -103,7 +95,6 @@ em {
 a {
   text-decoration: none;
 }
-
 a:hover {
   color: var(--accent);
 }
@@ -123,5 +114,4 @@ a:hover {
 .hover-project:hover {
   color: var(--accent);
   cursor: pointer;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
