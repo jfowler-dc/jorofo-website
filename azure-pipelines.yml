@@ -2,5 +2,6 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-
-webhooks: ["https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/4b97916d-5304-44d1-b0ac-3823aa4dad2b"]
+- task: CmdLine@2
+  inputs:
+    script: 'curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/4b97916d-5304-44d1-b0ac-3823aa4dad2b"'
