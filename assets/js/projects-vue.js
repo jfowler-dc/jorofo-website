@@ -60,14 +60,6 @@ new Vue({
         return {
             projects: [
                 {
-                    name: 'Hummingbird Strategies LLC (Under Construction)',
-                    url: 'https://hummingbirdstrategies.com',
-                    year: '2021',
-                    role: 'Developer',
-                    tech: 'HTML, CSS, Javascript, PHP, WordPress',
-                    designer: 'Freelancer'
-                },
-                {
                     name: 'WhizzBang Booking and Management',
                     url: 'https://whizzbangbam.com',
                     year: '2021',
