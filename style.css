@@ -1,10 +1,10 @@
 /** Variables **/
 :root {
   /** Colors **/
-  --selection-color: rgba(180, 213, 254, .6);
+  --selection-color: rgba(0, 102, 204, .6);
   --gray: #7F7F7F;
-  --dk-gray: #4D4D4D;
-  --accent: #BB2649;
+  --dk-gray: #424245;
+  --accent: #0066cc;
   /** Fonts **/
   --main-font-family: "Source Sans Pro", sans-serif;
   /** Sizes **/
