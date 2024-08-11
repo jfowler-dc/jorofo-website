@@ -8,7 +8,7 @@ class FooterComponent extends HTMLElement {
         this.year = date.getFullYear();
         // Create the template
         this.wrapper.innerHTML = `
-            <div class="wrap pb-6">
+            <div class="pb-6">
                 <span class="color-gray"><a href="/">jorofo.com</a> | ©${this.year}</span>
             </div>
         `;

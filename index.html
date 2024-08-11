@@ -53,102 +53,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
-        <main class="wrap">
-            
-            <section class="flex items-center py-20 flex-col sm:flex-row">
-                <div class="w-36 h-36 flex-shrink-0 rounded-full mb-8 sm:mb-0 sm:mr-8 overflow-hidden">
-                    <img src="./assets/images/john-fowler-picture.png" alt="John Fowler">
-                </div>
-                <header class="text-center sm:text-left">
-                    <h1 class="text-4xl font-black"><span class="color-accent">Jo</span>hn <span class="color-accent">Ro</span>ss <span class="color-accent">Fo</span>wler</h1>
-                    <p class="text-base color-gray">Senior Front End Developer <br> Maitland, FL</p>
+    <main id="wrapper" class="wrap">
+        
+        <section class="flex items-center py-20 flex-col sm:flex-row">
+            <div class="w-36 h-36 flex-shrink-0 rounded-full mb-8 sm:mb-0 sm:mr-8 overflow-hidden">
+                <img src="./assets/images/john-fowler-picture.png" alt="John Fowler">
+            </div>
+            <header class="text-center sm:text-left">
+                <h1 class="text-4xl font-black"><span class="color-accent">Jo</span>hn <span class="color-accent">Ro</span>ss <span class="color-accent">Fo</span>wler</h1>
+                <p class="text-base color-gray">Senior Front End Developer <br> Maitland, FL</p>
+            </header>
+        </section>
+
+        <section class="pb-20">
+            <p class="text-lg md:w-9/12">Hello and welcome! I'm John Fowler, a passionate and dedicated front-end developer based in Maitland, FL. With years of experience in creating dynamic, user-friendly web applications, I bring a wealth of technical knowledge and business insight to every project. My goal is to build seamless digital experiences that not only look great but also perform flawlessly. Let's dive into the world of front-end development together and explore how we can turn ideas into reality. Keep reading to discover more about my journey and expertise!</p>
+        </section>
+        
+        <section-component 
+            section-title-text="Projects">
+            <div id="projects">
+
+            </div>
+        </section-component>
+
+        <section-component 
+            section-title-text="Experience">
+            <ul>
+                <resume-line 
+                    job-name-text="CDW" 
+                    job-title-text="Senior Software Engineer I" 
+                    time-span-text="2021 - Present">
+                </resume-line>
+                <resume-line 
+                    job-name-text="Freelance" 
+                    job-title-text="Developer & UI/UX Consultant" 
+                    time-span-text="2017 - Present">
+                </resume-line>
+                <resume-line 
+                    job-name-text="Crier Media Group" 
+                    job-title-text="Senior Front End Developer" 
+                    time-span-text="2017 - 2021">
+                </resume-line>
+                <resume-line 
+                    job-name-text="Marshall University" 
+                    job-title-text="Adjunct Professor" 
+                    time-span-text="2017">
+                </resume-line>
+                <resume-line 
+                    job-name-text="Bulldog Creative Services" 
+                    job-title-text="Lead Front End Developer" 
+                    time-span-text="2014 - 2017">
+                </resume-line>
+                <resume-line 
+                    job-name-text="Glenn's Sporting Goods" 
+                    job-title-text="Graphic Designer / Web Developer" 
+                    time-span-text="2013 - 2014">
+                </resume-line>
+            </ul>
+        </section-component>
+
+        <section-component 
+            section-title-text="Education">
+            <div class="mb-4">
+                <header>
+                    <h3 class="text-2xl font-semibold">Marshall University</h3>
                 </header>
-            </section>
-
-            <section class="pb-20">
-                <p class="text-lg md:w-9/12">Hello and welcome! I'm John Fowler, a passionate and dedicated front-end developer based in Maitland, FL. With years of experience in creating dynamic, user-friendly web applications, I bring a wealth of technical knowledge and business insight to every project. My goal is to build seamless digital experiences that not only look great but also perform flawlessly. Let's dive into the world of front-end development together and explore how we can turn ideas into reality. Keep reading to discover more about my journey and expertise!</p>
-            </section>
-            
-            <section-component section-title-text="Projects">
-                <div id="projects">
-
-                </div>
-            </section-component>
-
-            <section-component section-title-text="Experience">
-                <ul>
-                    <resume-line 
-                        job-name-text="CDW" 
-                        job-title-text="Senior Software Engineer I" 
-                        time-span-text="2021 - Present">
-                    </resume-line>
-                    <resume-line 
-                        job-name-text="Freelance" 
-                        job-title-text="Developer & UI/UX Consultant" 
-                        time-span-text="2017 - Present">
-                    </resume-line>
-                    <resume-line 
-                        job-name-text="Crier Media Group" 
-                        job-title-text="Senior Front End Developer" 
-                        time-span-text="2017 - 2021">
-                    </resume-line>
-                    <resume-line 
-                        job-name-text="Marshall University" 
-                        job-title-text="Adjunct Professor" 
-                        time-span-text="2017">
-                    </resume-line>
-                    <resume-line 
-                        job-name-text="Bulldog Creative Services" 
-                        job-title-text="Lead Front End Developer" 
-                        time-span-text="2014 - 2017">
-                    </resume-line>
-                    <resume-line 
-                        job-name-text="Glenn's Sporting Goods" 
-                        job-title-text="Graphic Designer / Web Developer" 
-                        time-span-text="2013 - 2014">
-                    </resume-line>
-                </ul>
-            </section-component>
-
-            <section-component section-title-text="Education">
-                <div class="mb-4">
-                    <header>
-                        <h3 class="text-2xl font-semibold">Marshall University</h3>
-                    </header>
-                    <div class="flex justify-between text-base color-gray">
-                        <div>
-                            <h4>BFA Graphic Design</h4>
-                        </div>
-                        <div class="ml-4 flex-shrink-0">
-                            <span>2008 - 2014</span>
-                        </div>
+                <div class="flex justify-between text-base color-gray">
+                    <div>
+                        <h4>BFA Graphic Design</h4>
+                    </div>
+                    <div class="ml-4 flex-shrink-0">
+                        <span>2008 - 2014</span>
                     </div>
                 </div>
-            </section-component>
+            </div>
+        </section-component>
 
-            <section-component section-title-text="Skillset">
-                <div class=" text-base color-gray">
-                    <p>HTML 5, CSS 3/SCSS, Javascript, React.js, VueJS, jQuery, .NET/C#, PHP/Laravel, MySQL, Firebase, Nginx, CloudFlare, WordPress, ExpressionEngine, CraftCMS, Adobe Suite (Photoshop, Illustrator, XD, InDesign), Figma, MS Office</p>
-                </div>
-            </section-component>
-            
-            <section-component section-title-text="Connect">
-                <div class=" text-base color-gray">
-                    <p>
-                        <a class="mr-8" href="mailto:jorofodesign@gmail.com">Email</a>
-                        <a class="mr-8" target="_blank" href="https://github.com/jfowler-dc">Github</a>
-                        <a class="mr-8" target="_blank" href="https://www.linkedin.com/in/john-r-fowler/">LinkedIn</a>
-                    </p>
-                </div>
-            </section-component>
+        <section-component 
+            section-title-text="Skillset">
+            <div class=" text-base color-gray">
+                <p>HTML 5, CSS 3/SCSS, Javascript, React.js, VueJS, jQuery, .NET/C#, PHP/Laravel, MySQL, Firebase, Nginx, CloudFlare, WordPress, ExpressionEngine, CraftCMS, Adobe Suite (Photoshop, Illustrator, XD, InDesign), Figma, MS Office</p>
+            </div>
+        </section-component>
+        
+        <section-component section-title-text="Connect">
+            <div class=" text-base color-gray">
+                <p>
+                    <a class="mr-8" href="mailto:jorofodesign@gmail.com">Email</a>
+                    <a class="mr-8" target="_blank" href="https://github.com/jfowler-dc">Github</a>
+                    <a class="mr-8" target="_blank" href="https://www.linkedin.com/in/john-r-fowler/">LinkedIn</a>
+                </p>
+            </div>
+        </section-component>
 
         <footer-component></footer-component>
-    </div><!-- #wrapper -->
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script type="text/javascript" src="https://unpkg.com/vue-slide-up-down@1.0.2/dist/vue-slide-up-down.umd.js"></script>
-    
     <script src="./assets/js/section-component.js"></script>
     <script src="./assets/js/resume-component.js"></script>
     <script src="./assets/js/footer-component.js"></script>
