@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** Variables **/
 :root {
   /** Colors **/
@@ -114,4 +115,29 @@ a:hover {
 .hover-project:hover {
   color: var(--accent);
   cursor: pointer;
+}
+
+details[open] summary {
+  color: var(--accent);
+}
+details[open] summary:after {
+  content: "▼";
+  transform: translateY(-50%);
+}
+details summary {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  padding-right: 40px;
+}
+details summary:after {
+  content: "►";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+details summary:hover {
+  color: var(--accent);
 }/*# sourceMappingURL=style.css.map */
