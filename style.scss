@@ -125,3 +125,34 @@ a {
         cursor:pointer
     }
 }
+
+
+
+details {
+    &[open] {
+        summary {
+            color:var(--accent);
+            &:after {
+                content: '\25BC'; 
+                transform: translateY(-50%);
+            }
+        }
+    }
+    summary {
+        list-style: none; 
+        position: relative; 
+        cursor: pointer;
+        padding-right: 40px; 
+        &:after {
+            content: '\25BA'; 
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease; 
+        }
+        &:hover {
+            color:var(--accent);
+        }
+    }
+}
