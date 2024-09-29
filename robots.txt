@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /node_modules/
+Disallow: /assets/
+
+# Allow the index page and stylesheet
+Allow: /index.html
+Allow: /style.css
+
+# Sitemap
+Sitemap: https://jorofo.com/sitemap.xml
+
