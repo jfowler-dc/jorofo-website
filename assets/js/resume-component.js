@@ -8,7 +8,7 @@ class ResumeLine extends HTMLElement {
         this.timeSpan = '';
 
         // Create wrapper
-        this.wrapper = document.createElement('li');
+        this.wrapper = document.createElement('div');
 
         // Create the template
         this.wrapper.innerHTML = `

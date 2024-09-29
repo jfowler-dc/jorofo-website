@@ -11,7 +11,7 @@ class ProjectLine extends HTMLElement {
         this.designer = '';
 
         // Create wrapper
-        this.wrapper = document.createElement('li');
+        this.wrapper = document.createElement('div');
 
         // Create the template
         this.wrapper.innerHTML = `
