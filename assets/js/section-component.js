@@ -8,7 +8,6 @@ class SectionComponent extends HTMLElement {
         // Create a style element and include global styles
         const style = document.createElement('style');
         style.textContent = `
-            @import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
             @import url('../../style.css')
         `;
 
