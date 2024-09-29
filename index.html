@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH7FE08EJ8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -229,7 +229,14 @@
     <script src="./assets/js/projects-component.js"></script>
     <script src="./assets/js/resume-component.js"></script>
     <script src="./assets/js/footer-component.js"></script>
-    <!-- Cloudflare Web Analytics -->
+    <!-- Cloudflare Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5a2bca504ebf4ca6af48a39af3e51d34"}'></script>
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>       
 </html>
