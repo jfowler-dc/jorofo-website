@@ -121,7 +121,8 @@ details[open] summary {
   color: var(--accent);
 }
 details[open] summary:after {
-  content: "▼";
+  content: "\f106";
+  font-family: "Font Awesome 5 Pro";
   transform: translateY(-50%);
 }
 details summary {

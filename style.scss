@@ -133,7 +133,8 @@ details {
         summary {
             color:var(--accent);
             &:after {
-                content: '\25BC'; 
+                content: '\f106'; 
+                font-family:'Font Awesome 5 Pro';
                 transform: translateY(-50%);
             }
         }
