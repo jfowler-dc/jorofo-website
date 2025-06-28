@@ -12,7 +12,7 @@ class ResumeLine extends HTMLElement {
 
         // Create the template
         this.wrapper.innerHTML = `
-        <div class="pb-4">
+        <div>
             <header>
                 <h3 class="text-2xl font-semibold">${this.jobName}</h3>
             </header>

@@ -116,6 +116,21 @@ a:hover {
   cursor: pointer;
 }
 
+.current-duties {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: rgb(107, 114, 128);
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 70%;
+}
+.current-duties ul {
+  list-style: disc;
+}
+.current-duties ul li {
+  margin-bottom: 0.3rem;
+}
+
 details[open] summary {
   color: var(--accent);
 }
