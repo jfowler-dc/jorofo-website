@@ -133,7 +133,7 @@ details {
         summary {
             color:var(--accent);
             &:after {
-                content: '\f106'; 
+                content: '\f107'; 
                 font-family:'Font Awesome 5 Pro';
                 transform: translateY(-50%);
             }
@@ -145,7 +145,8 @@ details {
         cursor: pointer;
         padding-right: 40px; 
         &:after {
-            content: '\25BA'; 
+            content: '\f105'; 
+            font-family:'Font Awesome 5 Pro';
             position: absolute;
             right: 0;
             top: 50%;

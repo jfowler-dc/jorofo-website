@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /** Variables **/
 :root {
   /** Colors **/
@@ -121,7 +120,7 @@ details[open] summary {
   color: var(--accent);
 }
 details[open] summary:after {
-  content: "\f106";
+  content: "\f107";
   font-family: "Font Awesome 5 Pro";
   transform: translateY(-50%);
 }
@@ -132,7 +131,8 @@ details summary {
   padding-right: 40px;
 }
 details summary:after {
-  content: "►";
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
   position: absolute;
   right: 0;
   top: 50%;
