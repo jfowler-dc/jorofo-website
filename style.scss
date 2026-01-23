@@ -124,15 +124,28 @@ a {
         color:var(--accent);
         cursor:pointer
     }
+} 
+
+
+.show-more {
+    color:var(--accent);
+    cursor:pointer;
+    font-size:12px;
+    line-height:16px;
 }
 
+
 .current-duties {
+    display:none;
     padding-left: 1rem;
     padding-top:.5rem;
     color: rgba(107, 114, 128,1);  
     font-size:14px;
     line-height:18px;
     max-width:70%;
+    &.hidden {
+        display:block;
+    }
     ul {
         list-style:disc;
 

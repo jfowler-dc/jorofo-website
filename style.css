@@ -116,13 +116,24 @@ a:hover {
   cursor: pointer;
 }
 
+.show-more {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .current-duties {
+  display: none;
   padding-left: 1rem;
   padding-top: 0.5rem;
   color: rgb(107, 114, 128);
   font-size: 14px;
   line-height: 18px;
   max-width: 70%;
+}
+.current-duties.hidden {
+  display: block;
 }
 .current-duties ul {
   list-style: disc;
